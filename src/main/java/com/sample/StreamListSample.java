@@ -1,8 +1,8 @@
 package com.sample;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class StreamListSample {
 	public static void main(String[] args) {
@@ -19,7 +19,9 @@ public class StreamListSample {
 
 		System.out.println(l1);
 
-		HashSet set = new HashSet(l1);
-		System.out.println(set);
+//		HashSet set = new HashSet(l1);
+//		System.out.println(set);
+
+		System.out.println(l1.stream().distinct().collect(Collectors.toList()));
 	}
 }
