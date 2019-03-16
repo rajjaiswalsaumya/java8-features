@@ -1,6 +1,7 @@
 package com.sample;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class StreamListSample {
@@ -17,5 +18,8 @@ public class StreamListSample {
 		l1.add("Mandar");
 
 		System.out.println(l1);
+
+		HashSet set = new HashSet(l1);
+		System.out.println(set);
 	}
 }
